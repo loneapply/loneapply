@@ -1,0 +1,195 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #F2F2F2;
+  color: #333;
+}
+
+/* Default styles for all screen sizes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  margin: 0 auto; /* Center the logo */
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #FF8C00;
+  text-decoration: none;
+}
+
+/* Form styles */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("dropdown-arrow.png") no-repeat right center/20px;
+  background-color: #FFFFFF;
+  color: #333333;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #FF8C00;
+}
+
+select option {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #FF8C00;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #FF8C00;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF6A00;
+}
+
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #FF8C00;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #FF8C00;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF6A00;
+}
+
+/* Footer styles */
+footer {
+  background-color: #355E3B;
+  padding: 20px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #FF8C00;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}

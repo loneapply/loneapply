@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bali, Indonesia</title>
+  <link rel="stylesheet" type="text/css" href="stylebali.css">
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      background-color: #F2F2F2;
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .slider {
+      width: 800px;
+      height: 400px;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #333;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .package-details {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .package-details ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .package-details li {
+      margin-bottom: 10px;
+    }
+
+    .package-details p {
+      margin-top: 10px;
+    }
+
+    .book-now-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .book-now-button button {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
+}
+
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="LONE.png" alt="Lone Apply Logo" class="logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1>Bali, Indonesia</h1>
+    <p>
+      Bali, known as the "Island of the Gods," is a tropical paradise located in Indonesia. With its stunning beaches, lush landscapes, vibrant culture, and rich history, Bali offers a unique and unforgettable experience for travelers.
+    </p>
+
+    <!-- Photo Slider -->
+    <div class="slider">
+      <img src="Bali.jpg" alt="Bali 1">
+      <img src="Bali 2.jpg" alt="Bali 2">
+      <img src="Bali 3.jpg" alt="Bali 3">
+      <img src="Bali 4.jpg" alt="Bali 4">
+      <img src="Bali 5.jpg" alt="Bali 5">
+      <img src="Bali 6.jpg" alt="Bali 6">
+      <img src="Bali 7.jpg" alt="Bali 7">
+      <img src="Bali 8.jpg" alt="Bali 8">
+      <img src="Bali 9.jpg" alt="Bali 9">
+      <img src="Bali 10.jpg" alt="Bali 10">
+      <img src="Bali 11.jpg" alt="Bali 11">
+
+      <div class="prev">&#10094;</div>
+      <div class="next">&#10095;</div>
+    </div>
+
+    <div class="dots">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <!-- Package Details -->
+    <div class="package-details">
+      <h2>Package Details</h2>
+      <ul>
+        <li>Round trip flight</li>
+        <li>Airport pickup shuttle</li>
+        <li>10-night luxurious beachfront resorts</li>
+        <li>Breakfast included</li>
+        <li>Guided tours to iconic temples</li>
+        <li>Thrilling water sports activities</li>
+        <li>Rejuvenating spa treatments</li>
+      </ul>
+      <p><strong>Starting Price:</strong> $2,850 (price may vary based on departure location)</p>
+    </div>
+
+    <!-- Book Now Button -->
+    <div class="center book-now-button">
+      <button class="sky-blue">Book Now</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <div class="footer-bottom">
+        <p>&copy; 2023 loneapply.com. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slider")[0].getElementsByTagName("img");
+      var dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+
+      setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+
+    var prevButton = document.getElementsByClassName("prev")[0];
+    var nextButton = document.getElementsByClassName("next")[0];
+
+    prevButton.addEventListener("click", function() {
+      slideIndex--;
+      showSlides();
+    });
+
+    nextButton.addEventListener("click", function() {
+      slideIndex++;
+      showSlides();
+    });
+  </script>
+</body>
+</html>

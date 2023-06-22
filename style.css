@@ -1,0 +1,193 @@
+/* Reset default browser styles */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set full width and height for the page */
+html, body, .hero-section {
+  height: 100%;
+  width: 100%;
+}
+
+/* Set background color for the page */
+body {
+  background-color: gold;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0;
+  background-color: #333;
+  color: #fff;
+  background-image: url('Bali Masthead_Entertainment_PoolParty_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-size: 72px;
+}
+
+.hero-section p {
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: #ff7f00;
+}
+
+/* Featured section styles */
+#featured {
+  background-color: #f9f9f9;
+  padding: 40px;
+  text-align: center;
+}
+
+#featured h2 {
+  margin: 0;
+  font-size: 25px;
+  color: #333;
+}
+
+#slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.slide-wrapper {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card {
+  text-align: center;
+}
+
+.destination-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.destination-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.destination-card p {
+  margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+  background-color: #355E3B;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section a {
+  color: #ff8c00;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section form input[type="email"] {
+  padding: 5px;
+  width: 200px;
+}
+
+.footer-section form button {
+  padding: 5px 10px;
+  background-color: #ff8c00;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-section form button:hover {
+  background-color: #ff6a00;
+}
